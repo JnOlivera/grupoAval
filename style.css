@@ -1,7 +1,141 @@
-body{
-    background-color: blue;
+
+
+/*Menu No responsive*/
+
+.barra-noresponsive{
+    display:flex;
+    width: 100vw;
+    height: 60px;
+    background-color: #144272;
+}
+.div-horario{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-horario p{
+ text-align: center;
+  max-width: 500px;
+}
+.menu-noresponsive{
+    margin:auto;
 }
 
-h1{
-    color: brown;
+.menu-noresponsive ul{
+    display:flex;
+    max-width: 500px;
 }
+
+.menu-noresponsive ul li{
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 2px solid black;
+    border-radius: .3rem;
+    margin-left:10px;
+}
+
+.logo-menu{
+    position: absolute;
+    width: 50px;
+    height: 55px;
+    color:white;
+    background-color: black;
+}
+
+
+/*Main página*/
+.propiedades-main{
+    margin:auto;
+    width: 90vw;
+}
+
+.seccion-mision{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.seccion-vision{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+
+.img-div{
+    width: 300px;
+    height: 400px;
+    background-color: #144272;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+}
+.img-div:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  }
+
+.card {
+    width: 300px;
+    height: 400px;
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  }
+  
+  .contenido-inicial {
+    height: 100%;
+    width: 100%;
+    background-color: #144272;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .card:hover .contenido-inicial {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .contenido-final {
+    height: 0%;
+    width: 100%;
+    background-color: pink;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .card:hover .contenido-final {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
