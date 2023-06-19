@@ -12,6 +12,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    padding: 15px;
 }
 .div-horario p{
  text-align: center;
@@ -139,3 +140,127 @@
     font-size: 1.8rem;
     transform: rotate(0deg);
   }
+
+/*Footer*/
+
+ footer{
+    
+   width: 100%;
+   background: #144272;
+   color: white;
+   padding: 40px;
+
+  }
+  .footer-container-all{
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+   
+
+  }
+
+  .foot-column1{
+   max-width: 400px;
+
+  }
+
+  .foot-column1 h1{
+  font-size: 25px;
+  margin-top: 20px;
+ 
+
+  }
+
+  .foot-column1 p{ 
+   font-size: 14px;
+   color:beige;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   
+  }
+  .foot-column2 {
+   max-width: 400px;
+   text-align: center;
+
+  }
+  .foot-column2 h1{
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .foot-column2 p{
+   font-size: 22px;
+
+  }
+  .foot-redes{
+   margin-top: 20px;
+   display: flex;
+   text-align: none;
+  }
+  .foot-redes i{
+   width: 30px;
+   height: 30px;
+  }
+  .foot-redes a{
+     text-decoration: none;
+  }
+  .foot-redes label{
+   color: beige;
+   
+  }
+  .foot-column3{
+   max-width: 400px;
+   
+  }
+  .foot-column3 h1{
+   font-size: 25px;
+   margin-top: 20px;
+   
+  }
+  .foot-contactos{
+   margin-top: 20px;
+   display: flex;
+
+  }
+  .foot-contactos i{
+    width: 30px;
+   height: 30px;
+  }
+
+
+  .footer-container1{
+   width: 96%;
+   background: #456789;
+   
+   padding: 20px;
+   margin-top: 20px;
+  }
+
+  .politica a{
+   text-decoration: none;
+   color: beige;
+  }
+
+  .footer-container{
+   display: flex;
+  }
+  .foot-column1, .foot-column2{
+   padding-left: 22px;
+
+  }
+
+  .footer-container{
+  display:flex;
+  justify-content: space-between;
+  
+ 
+ }
+.footer-container1{
+ display: flex;
+ justify-content: space-between;
+}
+
+.espacio {
+  display: inline-block;
+  width: 10px;
+}
