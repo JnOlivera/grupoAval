@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,9 +10,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" type="text/css" href="estilos/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="estilos/style.css" />
     <title>Grupo AVAL</title>
   </head>
   <body>
+    <a href="" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+	
     <header>
       <div class="div-horario">
         <p>HORARIO DE ATENCION: LUNES A VIERNES DE 08 HS A 18 HS.</p>
@@ -36,11 +38,7 @@
     </header>
     <main class="propiedades-main">
       <section class="quienes-somos">
-        <img
-          src="imagenLimpieza1.jpg"
-          alt="Limpieza Industrial"
-          class="imagen-principal"
-        />
+        <article class="info-articulo">
         <h2>MISION</h2>
         <p>
           Ser el socio confiable y experto en servicios de limpieza y
@@ -52,6 +50,8 @@
           confiabilidad y compromiso con la excelencia en cada tarea que
           realizamos.
         </p>
+      </article>
+      <article class="info-articulo">
         <h2>VISION</h2>
         <p>
           Buscamos ser reconocidos como el referente de confianza en nuestro
@@ -61,6 +61,8 @@
           con nuestros clientes y el fomento de prácticas sostenibles para
           contribuir al cuidado del medio ambiente.
         </p>
+      </article>
+      <article class="info-articulo">
         <h2>VALORES</h2>
         <ul>
           <li>Excelencia</li>
@@ -69,12 +71,12 @@
           <li>Mejora continua</li>
           <li>Integridad</li>
         </ul>
+      </article>
       </section>
-    </main>
-  </body>
+
   <section class="card-container">
     <div class="card">
-      <img src="imagen1.jpg" alt="Limpieza Industrial" class="card-image1" />
+      <img src="fotos/imagen1.jpg" alt="Limpieza Industrial" class="card-image1" />
       <div class="card-servicios1">
         <h2 class="card-title">LIMPIEZA INDUSTRIAL</h2>
         <ul class="card-items">
@@ -87,7 +89,7 @@
     </div>
 
     <div class="card">
-      <img src="imagen2.jpg" alt="Limpieza Institucional" class="card-image" />
+      <img src="fotos/imagen2.jpg" alt="Limpieza Institucional" class="card-image" />
       <div class="card-servicios">
         <h2 class="card-title">LIMPIEZA INSTITUCIONAL</h2>
         <ul class="card-items">
@@ -113,7 +115,7 @@
 
     <div class="card">
       <img
-        src="imagen3.jpg"
+        src="fotos/imagen3.jpg"
         alt="Mantenimiento de Espacios Verdes"
         class="card-image"
       />
@@ -131,7 +133,7 @@
 
     <div class="card">
       <img
-        src="imagen4.jpg"
+        src="fotos/imagen4.jpg"
         alt="Administración de Consorcios"
         class="card-image"
       />
@@ -147,7 +149,9 @@
         </ul>
       </div>
     </div>
-  </section>
+    </section>
+    </main>
+  </body>
   <footer>
     <div class="footer-container-all">
       <div class="footer-container">
