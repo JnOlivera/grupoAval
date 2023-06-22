@@ -156,6 +156,10 @@
   display: none;
 }
 
+.vision-img{
+  display:none;
+}
+
 /*cards servicios*/
 
 .card {
@@ -332,6 +336,12 @@
 
 /*Responsive*/
 @media (max-width:600px){
+  .propiedades-main{
+    width: 90vw;
+  }
+  .div-horario{
+    width: 90vw;
+  }
   .whatsapp{
     display: none;
   }
@@ -363,7 +373,12 @@
       flex-direction: column; 
       margin-top: 30px; 
     }
-  
+    .vision-noresponsive-img{
+      display: none;
+    }
+    .vision-img{
+      display:flex;
+    }
     .mision-vision-articulo img {
       width: 150px;
       height: 150px;
@@ -397,7 +412,7 @@
     }
 
     .card{
-      width: 100vw;
+      width: 90vw;
       height: auto;
     }
 
