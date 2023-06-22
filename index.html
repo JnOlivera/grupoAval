@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,7 +17,8 @@
     <title>Grupo AVAL</title>
   </head>
   <body>
-    <a href="" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://wa.me/5493364551195?text=Hola!%20Gracias%20por%20contactarnos,%20¿En%20qué%20podemos%20ayudarte?!" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+    </a>
 	
     <header>
       <div class="div-horario">
@@ -39,51 +42,112 @@
     <main class="propiedades-main">
       <section class="quienes-somos">
         <article class="info-articulo">
-        <h2>MISION</h2>
-        <p>
-          Ser el socio confiable y experto en servicios de limpieza y
-          mantenimiento, ofreciendo soluciones integrales y personalizadas para
-          satisfacer las necesidades de nuestros clientes. Nos esforzaremos por
-          proporcionar resultados impecables y un ambiente limpio y saludable, a
-          través de un equipo capacitado, tecnología de vanguardia y prácticas
-          sostenibles. Buscamos ser reconocidos por nuestra calidad,
-          confiabilidad y compromiso con la excelencia en cada tarea que
-          realizamos.
-        </p>
-      </article>
-      <article class="info-articulo">
-        <h2>VISION</h2>
-        <p>
-          Buscamos ser reconocidos como el referente de confianza en nuestro
-          sector, brindando resultados excepcionales que garanticen espacios
-          limpios, saludables y agradables. Nuestra visión incluye la expansión
-          de nuestras operaciones, el establecimiento de relaciones duraderas
-          con nuestros clientes y el fomento de prácticas sostenibles para
-          contribuir al cuidado del medio ambiente.
-        </p>
-      </article>
-      <article class="info-articulo">
-        <h2>VALORES</h2>
-        <ul>
-          <li>Excelencia</li>
-          <li>Eficiencia</li>
-          <li>Profesionalismo</li>
-          <li>Mejora continua</li>
-          <li>Integridad</li>
-        </ul>
-      </article>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="fotos/ImagenLimpieza1.jpg" class="d-block w-100 img-carrousel" alt="NuestroDescripcion">
+                <div class="carrousel-text">
+                  <p>Grupo Aval es una empresa joven especializada en servicios de
+                    limpieza y mantenimiento integral. Contamos con un equipo altamente
+                    capacitado, nos dedicamos a proporcionar soluciones personalizadas y
+                    de alta calidad con el objetivo de satisfacer las necesidades de
+                    nuestros clientes.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="fotos/imagenLimpieza.jpg" class="d-block w-100 img-carrousel" alt="NuestrosInfo">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
       </section>
-
+      <section>
+        <article class="mision-vision-articulo">
+          <img src="fotos/mision.jpg" alt="NuestraMision">
+          <div class="texto-mision-vision">
+          <h3>Misión</h3>
+          <p> Ser el socio confiable y experto en servicios de limpieza y
+            mantenimiento, ofreciendo soluciones integrales y personalizadas para
+            satisfacer las necesidades de nuestros clientes. Nos esforzaremos por
+            proporcionar resultados impecables y un ambiente limpio y saludable, a
+            través de un equipo capacitado, tecnología de vanguardia y prácticas
+            sostenibles. Buscamos ser reconocidos por nuestra calidad,
+            confiabilidad y compromiso con la excelencia en cada tarea que
+            realizamos.</p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article class="mision-vision-articulo">
+          <div class="texto-mision-vision">
+          <h3>Visión</h3>
+          <p>
+            Buscamos ser reconocidos como el referente de confianza en nuestro
+            sector, brindando resultados excepcionales que garanticen espacios
+            limpios, saludables y agradables. Nuestra visión incluye la expansión
+            de nuestras operaciones, el establecimiento de relaciones duraderas
+            con nuestros clientes y el fomento de prácticas sostenibles para
+            contribuir al cuidado del medio ambiente.
+          </p>
+          </div>
+          <img src="fotos/vision.jpg" alt="NuestraVision">
+        </article>
+      </section>
+   <div>
+    <h3>NUESTROS VALORES</h3>
+   </div>
+   <section class="valores-section">
+    <div>
+    <div class="contenedor-valor">
+    <i class="fa-solid fa-medal"></i>
+   </div>
+   <p>Excelencia</p>
+   </div>
+   <div>
+   <div class="contenedor-valor">
+    <i class="fa-solid fa-gear"></i>
+  </div>
+   <p>Eficiencia</p>
+   </div>
+   <div>
+  <div class="contenedor-valor">
+    <i class="fa-solid fa-user-tie"></i>
+  </div>
+  <p>Profesionalismo</p>
+  </div>
+  <div>
+  <div class="contenedor-valor">
+    <i class="fa-solid fa-briefcase"></i>
+  </div>
+  <p>Mejora Continua</p>
+  </div>
+  <div>
+  <div class="contenedor-valor">
+    <i class="fa-solid fa-handshake"></i>
+  </div>
+  <p>Integridad</p>
+</div>
+   </section>
+   <div>
+    <h3>SERVICIOS</h3>
+   </div>
   <section class="card-container">
     <div class="card">
       <img src="fotos/imagen1.jpg" alt="Limpieza Industrial" class="card-image1" />
       <div class="card-servicios1">
         <h2 class="card-title">LIMPIEZA INDUSTRIAL</h2>
         <ul class="card-items">
-          <li>Limpieza de líneas operativas.</li>
-          <li>Pintura de sendas peatonales.</li>
-          <li>Limpieza de cámaras y cunetas.</li>
-          <li>Limpieza final de obra.</li>
+          <li><i class="fa-solid fa-circle-check"></i>Limpieza de líneas operativas.</li>
+          <li><i class="fa-solid fa-circle-check"></i>Pintura de sendas peatonales.</li>
+          <li><i class="fa-solid fa-circle-check"></i>Limpieza de cámaras y cunetas.</li>
+          <li><i class="fa-solid fa-circle-check"></i>Limpieza final de obra.</li>
         </ul>
       </div>
     </div>
