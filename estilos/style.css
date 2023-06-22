@@ -152,6 +152,10 @@
   scale: 3;
 }
 
+.texto-responsive{
+  display: none;
+}
+
 /*cards servicios*/
 
 .card {
@@ -358,5 +362,68 @@
 .espacio {
   display: inline-block;
   width: 10px;
+}
+
+/*Responsive*/
+@media (max-width:600px){
+  .whatsapp{
+    display: none;
+  }
+  .barra-noresponsive{
+    display: none;
+  }
+    .quienes-somos {
+      display: none;
+    }
+  
+    .texto-responsive {
+      width: 90vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; 
+      text-align: center; 
+      margin: 30px auto; 
+    }
+  
+    .texto-responsive p {
+      margin: 10px 0; 
+    }
+  
+   
+    .mision-vision-articulo {
+      width: 90vw;
+      display: flex;
+      flex-direction: column; 
+      margin-top: 30px; 
+    }
+  
+    .mision-vision-articulo img {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto; 
+      border-radius: 50%;
+    }
+  
+    .texto-mision-vision {
+      width: 100%; 
+      font-size: 16px; 
+      margin-top: 20px; 
+    }
+    .valores-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  
+    .contenedor-valor {
+      width: 100px;
+      height: 100px;
+    }
+
+    footer{
+      display:none;
+    }
+
 }
 
