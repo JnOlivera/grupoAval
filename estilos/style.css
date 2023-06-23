@@ -110,14 +110,14 @@
 .mision-vision-articulo{
   width: 100vw;
   display: flex;
-  margin-top: 30px;
+  margin-top: 80px;
   justify-content: space-around;
  
 }
 
 .mision-vision-articulo img{
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
 }
 
@@ -127,8 +127,32 @@
 
 }
 
+.texto-mision-vision p{
+     margin-top: 40px;
+      text-align: center;
+}
+.texto-mision-vision h3{
+  text-align: center;
+  font-weight: bold;
+
+}
 .quienes-somos ul{
   list-style-type: none;
+}
+.nuestros-valores{
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.separador{
+  width: 12vw;
+  height: 2px;
+  background-color:yellow;
+  margin: auto;
+  margin-bottom: 40px;
+
+  
 }
 
 .valores-section{
@@ -139,13 +163,22 @@
 .contenedor-valor{
   width: 150px;
   height: 150px;
-  border: 1px solid black;
   border-radius: 50%;
   background-color: #144272;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
+  transition: box-shadow 0.6s ease;
+}
+.contenedor-valor:hover{
+  background-color:#2C74B3;
+  box-shadow: 0px 0px 25px #191a1b;
+}
+ .grupo-valor p{
+  text-align: center;
+  margin: 20px;
+  font-weight: 500;
 }
 
 .contenedor-valor i{
@@ -160,7 +193,113 @@
   display:none;
 }
 
+.servicios{
+text-align: center;
+font-weight: bold;
+}
+
+.contenedor-titulo{
+  margin: 50px;
+}
+
 /*cards servicios*/
+
+ .card-nos{
+position: relative;
+margin: 5px;
+width: 30%;
+border: 1px solid #ccc;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+box-shadow: 8px 12px 10px rgb(0, 0, 0);
+}
+
+ .card-nos .face-nos{
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border-radius: 10px;
+overflow: hidden;
+transition: .5s;
+}
+
+ .card-nos .front-nos{
+ transform: perspective(600px) rotateY(0deg);
+ box-shadow: 0 5px 10px black;
+ }
+
+ .card-nos .front-nos img{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ object-fit:fill;
+ }
+
+  .card-nos .front-nos h1{
+ position: absolute;
+ width: 100%;
+ height: 45px;
+ bottom: 0;
+ line-height: 45px;
+ color: black;
+ background: black rgba(0,0,0,.4) ;
+ text-align: center;
+ }
+
+.card-nos .back-nos{
+transform: perspective(600px) rotateY(180deg);
+background: #456789 (3,35,54);
+padding: 15px;
+color: rgb(48, 57, 188);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+box-shadow: 0px 5px 10px black;
+}
+
+.card-nos .back-nos .link-nos{
+ border-top: solid 1px white;
+ height: 50px;
+ line-height: 50px;
+}
+
+.card-nos .back-nos .link-nos a{
+color: white;
+}
+
+.card-nos .back-nos h1{
+ font-size: 30px;
+ margin-top: 20px;
+ letter-spacing: 2px;
+}
+
+.card-nos .back-nos p{
+ font-size: 10px;
+letter-spacing: 1.5px;
+color: black;
+}
+
+.card-nos:hover .front-nos{
+transform: perspective(600px) rotateY(180deg);
+}
+
+.card-nos:hover .back-nos{
+  transform: perspective(600px) rotateY(360deg);
+}
+
+ .cuadro-nos{
+   display: inline-block
+ }
+
+ .container-related-products-nos{
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   margin-bottom: 50px;
+   margin-top: 50px;
+   background-color:#74BDE0;
+ }
 
 .card {
   width: 30%;
@@ -391,10 +530,15 @@
       font-size: 16px; 
       margin-top: 20px; 
     }
+   
+
     .valores-section {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
+    }
+    .valores-section p{
+      text-align: center;
     }
   
     .contenedor-valor {
