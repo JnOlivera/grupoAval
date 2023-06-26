@@ -241,7 +241,7 @@ font-weight: bold;
 
 .card-nos .front-nos img {
   width: 100%;
-  height: 70%;
+  height: 40%;
   max-height: 50%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
