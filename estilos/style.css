@@ -604,9 +604,9 @@ font-weight: bold;
       padding:0;
     }
 
-    .card{
+    .card-nos{
       width: 90vw;
-      height: auto;
+      height: 350px;
     }
 
 }
