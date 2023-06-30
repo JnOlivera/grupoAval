@@ -96,8 +96,12 @@
 
 /*Carrousel*/
 .img-carrousel{
-  height: 700px;
+  height: 550px;
+    -webkit-clip-path: circle(120vw at 50% -100vw);
+  clip-path: circle(150vw at 50% -115vw);
+
 }
+
 
 .carrousel-text{
   width: 50%;
@@ -412,8 +416,8 @@ font-weight: bold;
 .scroll-to-top {
   display: none;
   position: fixed;
-  bottom:50px;
-  left: 20px;
+  bottom:150px;
+  right: 35px;
   z-index: 99;
   background-color: #000;
   color: #fff;
@@ -488,10 +492,13 @@ footer{
  .foot-redes{
   margin-top: 20px;
   display: flex;
+  
  }
+
  .foot-redes i{
   width: 30px;
   height: 30px;
+  cursor: pointer;
  }
  .foot-redes label{
   color: beige;
@@ -508,20 +515,31 @@ footer{
  .foot-contactos{
   margin-top: 20px;
   display: flex;
+ 
+ 
 
  }
  .foot-contactos i{
    width: 30px;
   height: 30px;
+  cursor: pointer;
  }
+
+ .foot-contactos a{
+ color: #FFF;
+ 
+
+ }
+
 
 
  .footer-container1{
   width: 96%;
   background: #456789;
-  
+  display: flex;
   padding: 20px;
   margin-top: 20px;
+   justify-content: space-between;
  }
 
  .politica a{
