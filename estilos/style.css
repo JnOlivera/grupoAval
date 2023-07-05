@@ -57,6 +57,14 @@
   margin-top:18px;
 }
 
+.menu-noresponsive ul li:hover{
+ text-decoration: underline;
+ text-decoration-color: white;
+ text-decoration-style: solid;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+}
+
 .menu-noresponsive a{
   color: #fff;
   margin-left: 20px;
