@@ -582,6 +582,11 @@ footer{
 /*Responsive*/
 
 @media (max-width:600px){
+  .img-logo{
+    width: 100px;
+   height: 100px;
+   margin-top: 10px;
+  }
   .menuresponsive{
     display:block;
     width: 100vw;
@@ -601,7 +606,7 @@ footer{
     position: absolute;
     box-sizing: border-box;
     margin: 0;
-    margin-top:-45px;
+    margin-top:-75px;
     padding: 0;
     right: 0;
     top: 0;
@@ -645,7 +650,12 @@ footer{
     width: 90vw;
   }
   .div-horario{
-    width: 90vw;
+    width: 100vw;
+  }
+
+  .div-horario p{
+    margin-top: 10px;
+   text-align: center;
   }
  
   .barra-noresponsive{
