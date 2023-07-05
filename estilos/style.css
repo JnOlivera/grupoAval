@@ -13,6 +13,7 @@
 }
 .div-horario{
     display:flex;
+    height: 50px;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -35,7 +36,7 @@
 
 }
 
-.menu-noresponsive ul li{
+/*.menu-noresponsive ul li{
     width: 150px;
     height: 50px;
     background-color: #fff;
@@ -46,19 +47,25 @@
     border: 2px solid black;
     border-radius: .3rem;
     margin: 5px;
+}*/
+
+.menu-noresponsive ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top:18px;
 }
 
 .menu-noresponsive a{
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 1rem;
   text-decoration: none;
 }
 
-.logo-menu{
-    position: absolute;
-    width: 50px;
-    height: 55px;
-    color:white;
-    background-color: black;
-}
 
 
 /*Main página*/
@@ -95,6 +102,14 @@
 }
 
 /*Carrousel*/
+.carousel-item img.alt-logo {
+  position: absolute;
+  top: 30%;
+  right: 25%; 
+  transform: translate(-50%, -50%);
+  max-width: 250px; /* Ajusta el ancho máximo del logo según tus necesidades */
+  transform: scale(2.5); /* Aplica una escala del 1000% (10 veces más grande) */
+}
 .img-carrousel{
   height: 550px;
     -webkit-clip-path: circle(120vw at 50% -100vw);
@@ -157,6 +172,9 @@
   font-weight: bold;
 
 }
+.contenedor-titulo p{
+  text-align: center;
+}
 
 .separador{
   width: 12vw;
@@ -189,8 +207,9 @@
   box-shadow: 0px 0px 25px #191a1b;
 }
  .grupo-valor p{
+
   text-align: center;
-  margin: 20px;
+  margin-top: 20px;
   font-weight: 500;
 }
 
@@ -574,6 +593,7 @@ footer{
     position: absolute;
     box-sizing: border-box;
     margin: 0;
+    margin-top:-45px;
     padding: 0;
     right: 0;
     top: 0;
@@ -612,15 +632,14 @@ footer{
   .respmenu input:not(:checked) ~ .fa-times {
     display: none;
   }
+ 
   .propiedades-main{
     width: 90vw;
   }
   .div-horario{
     width: 90vw;
   }
-  .whatsapp{
-    display: none;
-  }
+ 
   .barra-noresponsive{
     display: none;
   }
@@ -680,7 +699,10 @@ footer{
     }
 
     .grupo-valor{
-      margin-left: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
  
   
@@ -710,4 +732,95 @@ footer{
    }
  
 }
+@media (max-width:768px){
+  .propiedades-main{
+    margin:auto;
+    width: 100vw;
+ 
+}
+  .alt-logo{
+    display:block;
+    margin-top:150px;
+  }
+    
+  .texto-responsive {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center; 
+    margin: 30px auto; 
+  }
 
+  .texto-responsive p {
+    margin: 10px 0; 
+  }
+
+ 
+  .mision-vision-articulo {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 30px; 
+  }
+  .vision-noresponsive-img{
+    display: none;
+  }
+  .vision-img{
+    display:flex;
+  }
+  .mision-vision-articulo img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto; 
+    border-radius: 50%;
+  }
+
+  .texto-mision-vision {
+    width: 100%; 
+    font-size: 16px; 
+    margin-top: 20px; 
+  }
+ 
+
+  .valores-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  
+  }
+  .valores-section p{
+    margin-left: -12px;
+  }
+
+  .grupo-valor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .contenedor-valor {
+    width: 100px;
+    height: 100px;
+    margin-left: 8px;
+  }
+ 
+
+  .card-nos{
+    width: 90vw;
+    height: 350px;
+    margin-top: 50px;
+  }
+  footer{
+    margin-top: 50px;
+  }
+  .footer-container{
+    display: inline-block;
+   }
+
+}
