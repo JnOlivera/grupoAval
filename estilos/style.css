@@ -114,8 +114,8 @@
   top: 30%;
   right: 25%; 
   transform: translate(-50%, -50%);
-  max-width: 250px; /* Ajusta el ancho máximo del logo según tus necesidades */
-  transform: scale(2.5); /* Aplica una escala del 1000% (10 veces más grande) */
+  max-width: 250px; 
+  transform: scale(2.5); 
 }
 .img-carrousel{
   height: 550px;
@@ -628,6 +628,23 @@ footer{
    height: 100px;
    margin-top: 10px;
   }
+  .img-carrousel{
+    height: auto;
+    -webkit-clip-path:none;
+    clip-path: none;
+  
+  }
+  .carousel-item img.alt-logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -30%;
+    right: 18%; 
+    transform: translate(-50%, -50%);
+    max-width: 250px; 
+    transform: scale(2.5); 
+  }
+
  
   .propiedades-main{
     width: 90vw;
@@ -644,9 +661,7 @@ footer{
   .barra-noresponsive{
     display: none;
   }
-    .quienes-somos {
-      display: none;
-    }
+  
   
     .texto-responsive {
       width: 90vw;
