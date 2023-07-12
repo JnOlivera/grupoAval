@@ -165,10 +165,12 @@
 .texto-mision-vision p{
      margin-top: 40px;
       text-align: center;
+       font-family: 'NOMBRE_DE_LA_FUENTE', sans-serif;
 }
 .texto-mision-vision h3{
   text-align: center;
   font-weight: bold;
+  
 
 }
 .quienes-somos ul{
@@ -180,7 +182,13 @@
 
 }
 .contenedor-titulo p{
-  text-align: center;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+     font-family: 'NOMBRE_DE_LA_FUENTE', sans-serif;
+     font-size: 100%;
+
+
 }
 
 .separador{
@@ -442,14 +450,19 @@ font-weight: bold;
 .scroll-to-top {
   display: none;
   position: fixed;
-  bottom:150px;
-  right: 35px;
+  bottom:130px;
+  right: 45px;
   z-index: 99;
   background-color: #000;
   color: #fff;
   padding: 10px;
-  border-radius: 30%;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
   text-decoration: none;
+}
+.flecha{
+  left: 9px;
 }
 
 .scroll-to-top:hover {
@@ -518,7 +531,7 @@ footer{
  .foot-redes{
   margin-top: 20px;
   display: flex;
-  
+
  }
 
  .foot-redes i{
@@ -576,6 +589,10 @@ footer{
 .espacio {
   display: inline-block;
   width: 10px;
+}
+
+.valores-section p{
+  font-size: 130%;
 }
 
 /*Responsive*/
@@ -712,6 +729,8 @@ footer{
     }
     .valores-section p{
       margin-left: -12px;
+      
+      
     }
 
     .grupo-valor{
@@ -735,18 +754,27 @@ footer{
     }
 
     .card-nos{
+     
       width: 90vw;
       height: 350px;
       margin-top: 50px;
+      justify-content: center;
+      left: 21px;
     }
-
+    .integridad{
+      left: 50%;
+    }
+  
   footer{
     margin-top: 50px;
   }
   .footer-container{
     display: inline-block;
    }
- 
+ .contenedor-titulo p{
+  width: 100%;
+  height: 100%;
+ }
 }
 @media (max-width:768px){
   .propiedades-main{
