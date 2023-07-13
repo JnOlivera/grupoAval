@@ -671,6 +671,14 @@ footer{
   font-size: 130%;
 }
 
+.confiar{
+  width: 25%;
+  height: 25%;
+  left: 40%;
+ 
+}
+
+
 /*Responsive*/
 
 @media (max-width:600px){
