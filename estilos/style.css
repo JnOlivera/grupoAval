@@ -684,6 +684,20 @@ footer{
  
 }
 
+.marca-agua{
+  width: 100vw;
+  display: flex;
+  background-color: #144272;
+  align-items: center;
+  text-align:center;
+}
+
+.marca-agua p{
+  width: 100vw;
+  font-weight: bold;
+  text-align: center;
+}
+
 
 /*Responsive*/
 
@@ -860,6 +874,10 @@ footer{
   }
   .footer-container{
     display: inline-block;
+   }
+
+   .footer-container1{
+    display:block;
    }
  .contenedor-titulo p{
   width: 100%;
